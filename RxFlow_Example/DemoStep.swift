@@ -10,4 +10,8 @@ import RxFlow
 
 enum DemoStep: Step {
     
+    case loginIsRequired
+    case userIsLoggedIn
+    
+    case dashboardIsRequired
 }
