@@ -77,13 +77,29 @@
 				14FF58FC2615D5B2009DA007 /* Assets.xcassets */,
 				14FF58FE2615D5B2009DA007 /* LaunchScreen.storyboard */,
 				14FF59012615D5B2009DA007 /* Info.plist */,
-				14FF590F2615D6FB009DA007 /* DemoStep.swift */,
+				14FF595E261721C6009DA007 /* Flow */,
+				14FF595B2617219F009DA007 /* ViewController */,
+			);
+			path = RxFlow_Example;
+			sourceTree = "<group>";
+		};
+		14FF595B2617219F009DA007 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
 				14FF59132615DB94009DA007 /* LoginViewController.swift */,
 				14FF59162615DC32009DA007 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		14FF595E261721C6009DA007 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				14FF590F2615D6FB009DA007 /* DemoStep.swift */,
 				14FF59192615DCEB009DA007 /* AppFlow.swift */,
 				14FF59292615E482009DA007 /* AppStepper.swift */,
 			);
-			path = RxFlow_Example;
+			path = Flow;
 			sourceTree = "<group>";
 		};
 		1ABAABDDFD6733F80C0F6E6E /* Pods */ = {

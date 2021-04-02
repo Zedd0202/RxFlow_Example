@@ -11,7 +11,7 @@ import RxCocoa
 import RxSwift
 
 class AppFlow: Flow {
-    // MARK: - Properties
+
     var root: Presentable {
         return self.rootViewController
     }
@@ -23,7 +23,6 @@ class AppFlow: Flow {
 
     init() {}
 
-    // MARK: - Navigation switch
     func navigate(to step: Step) -> FlowContributors {
         guard let step = step as? DemoStep else { return .none }
         switch step {

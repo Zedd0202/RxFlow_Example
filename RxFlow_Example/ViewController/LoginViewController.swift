@@ -30,7 +30,7 @@ class LoginViewController: UIViewController, Stepper {
         super.viewDidLoad()
         self.title = "Login"
         self.view.backgroundColor = .systemBackground
-
+    
         self.view.addSubview(self.button)
         self.button.snp.makeConstraints {
             $0.leading.trailing.bottom.equalToSuperview().inset(20)
