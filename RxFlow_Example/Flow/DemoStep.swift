@@ -8,9 +8,6 @@
 import Foundation
 import RxFlow
 
-struct AppServices {
-    
-}
 enum DemoStep: Step {
     
     case loginIsRequired    
