@@ -20,6 +20,7 @@
 		14FF596B26172658009DA007 /* HomeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF596A26172658009DA007 /* HomeFlow.swift */; };
 		14FF596E261726BD009DA007 /* Child1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF596D261726BD009DA007 /* Child1ViewController.swift */; };
 		14FF5971261726C5009DA007 /* Child2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF5970261726C5009DA007 /* Child2ViewController.swift */; };
+		14FF597426172794009DA007 /* HomeStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF597326172794009DA007 /* HomeStepper.swift */; };
 		E7C0FD968AA29F6513006184 /* Pods_RxFlow_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE6F8E8345C840B338EFCE6 /* Pods_RxFlow_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		14FF596A26172658009DA007 /* HomeFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlow.swift; sourceTree = "<group>"; };
 		14FF596D261726BD009DA007 /* Child1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child1ViewController.swift; sourceTree = "<group>"; };
 		14FF5970261726C5009DA007 /* Child2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child2ViewController.swift; sourceTree = "<group>"; };
+		14FF597326172794009DA007 /* HomeStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStepper.swift; sourceTree = "<group>"; };
 		1EE6F8E8345C840B338EFCE6 /* Pods_RxFlow_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFlow_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CCB19E4BADAF7AD634E096 /* Pods-RxFlow_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFlow_Example.release.xcconfig"; path = "Target Support Files/Pods-RxFlow_Example/Pods-RxFlow_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DFA8FA1E34D9E27A590B5C64 /* Pods-RxFlow_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFlow_Example.debug.xcconfig"; path = "Target Support Files/Pods-RxFlow_Example/Pods-RxFlow_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				14FF59192615DCEB009DA007 /* AppFlow.swift */,
 				14FF59292615E482009DA007 /* AppStepper.swift */,
 				14FF596A26172658009DA007 /* HomeFlow.swift */,
+				14FF597326172794009DA007 /* HomeStepper.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				14FF58F62615D5B0009DA007 /* SceneDelegate.swift in Sources */,
 				14FF59172615DC32009DA007 /* HomeViewController.swift in Sources */,
 				14FF5971261726C5009DA007 /* Child2ViewController.swift in Sources */,
+				14FF597426172794009DA007 /* HomeStepper.swift in Sources */,
 				14FF592A2615E482009DA007 /* AppStepper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
