@@ -73,12 +73,10 @@
 			children = (
 				14FF58F32615D5B0009DA007 /* AppDelegate.swift */,
 				14FF58F52615D5B0009DA007 /* SceneDelegate.swift */,
-				14FF58F92615D5B0009DA007 /* Main.storyboard */,
-				14FF58FC2615D5B2009DA007 /* Assets.xcassets */,
-				14FF58FE2615D5B2009DA007 /* LaunchScreen.storyboard */,
 				14FF59012615D5B2009DA007 /* Info.plist */,
 				14FF595E261721C6009DA007 /* Flow */,
 				14FF595B2617219F009DA007 /* ViewController */,
+				14FF596526172300009DA007 /* Resources */,
 			);
 			path = RxFlow_Example;
 			sourceTree = "<group>";
@@ -100,6 +98,16 @@
 				14FF59292615E482009DA007 /* AppStepper.swift */,
 			);
 			path = Flow;
+			sourceTree = "<group>";
+		};
+		14FF596526172300009DA007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14FF58FE2615D5B2009DA007 /* LaunchScreen.storyboard */,
+				14FF58F92615D5B0009DA007 /* Main.storyboard */,
+				14FF58FC2615D5B2009DA007 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		1ABAABDDFD6733F80C0F6E6E /* Pods */ = {
