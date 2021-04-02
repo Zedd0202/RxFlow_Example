@@ -12,4 +12,7 @@ enum DemoStep: Step {
     
     case loginIsRequired    
     case homeIsRequired
+    
+    case child1IsRequired
+    case child2IsRequired
 }
