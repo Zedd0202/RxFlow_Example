@@ -30,6 +30,8 @@ class AppFlow: Flow {
             return self.navigateToLogin()
         case .homeIsRequired:
             return self.navigateToHome()
+        default:
+            return .none
         }
     }
     
