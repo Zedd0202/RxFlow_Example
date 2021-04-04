@@ -1,2 +1,2 @@
 # RxFlow_Example
-[RxFlow (1)](https://zeddios.tistory.com/1239)
+[RxFlow](https://zeddios.medium.com/rxflow-9d009357b262)
