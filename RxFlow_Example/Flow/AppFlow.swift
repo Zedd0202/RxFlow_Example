@@ -12,16 +12,15 @@ import RxSwift
 
 class AppFlow: Flow {
 
+    var window: UIWindow
+    
     var root: Presentable {
-        return self.rootViewController
+        return self.window
     }
 
-    private lazy var rootViewController: UINavigationController = {
-        let viewController = UINavigationController()
-        return viewController
-    }()
-
-    init() {}
+    init(window: UIWindow) {
+        self.window = window
+    }
 
     func navigate(to step: Step) -> FlowContributors {
         guard let step = step as? DemoStep else { return .none }
@@ -34,14 +33,18 @@ class AppFlow: Flow {
     }
     
     private func navigateToLogin() -> FlowContributors {
-        let viewController = LoginViewController()
-        self.rootViewController.setViewControllers([viewController], animated: false)
-        return .one(flowContributor: .contribute(withNext: viewController))
+        let loginFlow = LoginFlow()
+        Flows.use(loginFlow, when: .created) { (root) in
+            self.window.rootViewController = root
+        }
+        return .one(flowContributor: .contribute(withNextPresentable: loginFlow, withNextStepper: OneStepper(withSingleStep: DemoStep.loginIsRequired)))
     }
     
     private func navigateToHome() -> FlowContributors {
-        let viewController = HomeViewController()
-        self.rootViewController.setViewControllers([viewController], animated: false)
-        return .one(flowContributor: .contribute(withNext: viewController))
+        let homeFlow = HomeFlow()
+        Flows.use(homeFlow, when: .created) { (root) in
+            self.window.rootViewController = root
+        }
+        return .one(flowContributor: .contribute(withNextPresentable: homeFlow, withNextStepper: OneStepper(withSingleStep: DemoStep.homeIsRequired)))
     }
 }

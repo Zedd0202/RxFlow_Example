@@ -18,13 +18,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         self.window = window
-        let appFlow = AppFlow()
+        let appFlow = AppFlow(window: window)
         self.coordinator.coordinate(flow: appFlow, with: AppStepper())
+        window.makeKeyAndVisible()
         
-        Flows.use(appFlow, when: .created) { root in
-            window.rootViewController = root
-            window.makeKeyAndVisible()
-        }
+//        Flows.use(appFlow, when: .created) { root in
+//            window.rootViewController = root
+//            window.makeKeyAndVisible()
+//        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
