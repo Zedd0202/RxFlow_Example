@@ -28,6 +28,8 @@ class LoginFlow: Flow {
             return self.navigateToLogin()
         case .homeIsRequired:
             return .end(forwardToParentFlowWithStep: DemoStep.homeIsRequired)
+        default:
+            return .none
         }
     }
     
