@@ -9,7 +9,7 @@ import UIKit
 import RxFlow
 import RxRelay
 
-class ProfileViewController: UIViewController, Stepper {
+class ProfileViewController: BaseViewController, Stepper {
     
     var steps = PublishRelay<Step>()
 

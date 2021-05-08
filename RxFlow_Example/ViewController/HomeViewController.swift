@@ -7,13 +7,13 @@
 
 import UIKit
 import RxFlow
-import RxCocoa
+import RxRelay
 
-class HomeViewController: UIViewController, Stepper {
+class HomeViewController: BaseViewController, Stepper {
 
     var steps = PublishRelay<Step>()
     
-    var button: UIButton = {
+    var logoutButton: UIButton = {
         let button = UIButton()
         button.setTitle("로그아웃", for: .normal)
         button.backgroundColor = .systemRed
@@ -26,15 +26,23 @@ class HomeViewController: UIViewController, Stepper {
         self.title = "Home"
         self.view.backgroundColor = .systemBackground
 
-        self.view.addSubview(self.button)
-        self.button.snp.makeConstraints {
+        self.view.addSubview(self.logoutButton)
+        self.logoutButton.snp.makeConstraints {
             $0.leading.trailing.bottom.equalToSuperview().inset(20)
             $0.height.equalTo(50)
         }
+        
+        let settingButton = UIBarButtonItem(title: "설정", style: .plain, target: self, action: #selector(settingButtonDidTap))
+        self.navigationItem.rightBarButtonItem = settingButton
     }
     
     @objc
     func logoutButtonDidTap() {
         self.steps.accept(DemoStep.loginIsRequired)
+    }
+    
+    @objc
+    func settingButtonDidTap() {
+        self.steps.accept(DemoStep.settingsIsRequired)
     }
 }

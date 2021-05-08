@@ -7,13 +7,11 @@
 
 import Foundation
 import RxFlow
-import RxCocoa
-import RxSwift
+import RxRelay
 
 class LoginStepper: Stepper {
 
     let steps = PublishRelay<Step>()
-    private let disposeBag = DisposeBag()
 
     init() {
     }
@@ -22,17 +20,3 @@ class LoginStepper: Stepper {
         return DemoStep.loginIsRequired
     }
 }
-
-class HomeStepper: Stepper {
-
-    let steps = PublishRelay<Step>()
-    private let disposeBag = DisposeBag()
-
-    init() {
-    }
-
-    var initialStep: Step {
-        return DemoStep.homeIsRequired
-    }
-}
-

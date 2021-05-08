@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import RxFlow
+import RxRelay
+
+class HomeStepper: Stepper {
+
+    let steps = PublishRelay<Step>()
+
+    init() {
+    }
+
+    var initialStep: Step {
+        return DemoStep.homeIsRequired
+    }
+}
+

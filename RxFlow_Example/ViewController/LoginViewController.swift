@@ -10,7 +10,7 @@ import RxFlow
 import RxCocoa
 import SnapKit
 
-class LoginViewController: UIViewController, Stepper {
+class LoginViewController: BaseViewController, Stepper {
     
     var steps = PublishRelay<Step>()
     
